@@ -1,7 +1,8 @@
-import React, { Component } from "react";
-import { connect } from "react-redux";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { Link, Route, Switch } from 'react-router-dom';
+import Contact from './Contact.jsx';
+import styled from 'styled-components';
 
 const Wrapper = styled.div`
   display: grid;
@@ -34,19 +35,26 @@ const NavLink = styled(Link)`
 class Navbar extends Component {
   render() {
     return (
-      <Wrapper>
-        <LogoLink to="/">
-          <Logo>Pani Olena</Logo>
-        </LogoLink>
-        <NavLinks>
-          <NavLink to="/">HOME</NavLink>
-          <NavLink to="/portfolio">PORTFOLIO</NavLink>
-          <NavLink to="/bio">ABOUT</NavLink>
-          <NavLink to="/shop">SHOP</NavLink>
-          <NavLink to="/blog">BLOG</NavLink>
-          <NavLink to="/contact">CONTACT</NavLink>
-        </NavLinks>
-      </Wrapper>
+      <>
+        <Wrapper>
+          <LogoLink to="/">
+            <Logo>Pani Olena</Logo>
+          </LogoLink>
+          <NavLinks>
+            <NavLink to="/">HOME</NavLink>
+            <NavLink to="/portfolio">PORTFOLIO</NavLink>
+            <NavLink to="/bio">ABOUT</NavLink>
+            <NavLink to="/shop">SHOP</NavLink>
+            <NavLink to="/blog">BLOG</NavLink>
+            <NavLink to="/contact">CONTACT</NavLink>
+          </NavLinks>
+        </Wrapper>
+        <Switch>
+          <Route path="/contact">
+            <Contact />
+          </Route>
+        </Switch>
+      </>
     );
   }
 }
