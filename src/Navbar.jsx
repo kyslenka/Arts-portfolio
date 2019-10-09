@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
@@ -41,7 +40,7 @@ class Navbar extends Component {
         <NavLinks>
           <NavLink to="/">HOME</NavLink>
           <NavLink to="/portfolio">PORTFOLIO</NavLink>
-          <NavLink to="/bio">ABOUT</NavLink>
+          <NavLink to="/about">ABOUT</NavLink>
           <NavLink to="/shop">SHOP</NavLink>
           <NavLink to="/blog">BLOG</NavLink>
           <NavLink to="/contact">CONTACT</NavLink>
