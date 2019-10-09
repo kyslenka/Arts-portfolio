@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
-import { Link, Route, Switch } from 'react-router-dom';
-import Contact from './Contact.jsx';
+import { Link, Route } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -49,11 +48,6 @@ class Navbar extends Component {
             <NavLink to="/contact">CONTACT</NavLink>
           </NavLinks>
         </Wrapper>
-        <Switch>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-        </Switch>
       </>
     );
   }

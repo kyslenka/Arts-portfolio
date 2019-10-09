@@ -65,7 +65,8 @@ class Contact extends Component {
           </p>
           <p>Tel: 123-456-7890 | Email: info@mysite.com</p>
           <Form>
-            <form action="zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz">
+            {/* Figure out form action */}
+            <form action="">
               <Label htmlFor="name">Name: </Label>
               <Input
                 type="text"
