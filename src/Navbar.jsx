@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { Link, Route } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -34,21 +33,19 @@ const NavLink = styled(Link)`
 class Navbar extends Component {
   render() {
     return (
-      <>
-        <Wrapper>
-          <LogoLink to="/">
-            <Logo>Pani Olena</Logo>
-          </LogoLink>
-          <NavLinks>
-            <NavLink to="/">HOME</NavLink>
-            <NavLink to="/portfolio">PORTFOLIO</NavLink>
-            <NavLink to="/bio">ABOUT</NavLink>
-            <NavLink to="/shop">SHOP</NavLink>
-            <NavLink to="/blog">BLOG</NavLink>
-            <NavLink to="/contact">CONTACT</NavLink>
-          </NavLinks>
-        </Wrapper>
-      </>
+      <Wrapper>
+        <LogoLink to="/">
+          <Logo>Pani Olena</Logo>
+        </LogoLink>
+        <NavLinks>
+          <NavLink to="/">HOME</NavLink>
+          <NavLink to="/portfolio">PORTFOLIO</NavLink>
+          <NavLink to="/about">ABOUT</NavLink>
+          <NavLink to="/shop">SHOP</NavLink>
+          <NavLink to="/blog">BLOG</NavLink>
+          <NavLink to="/contact">CONTACT</NavLink>
+        </NavLinks>
+      </Wrapper>
     );
   }
 }
