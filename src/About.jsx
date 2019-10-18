@@ -10,18 +10,20 @@ const Container = styled.div`
   width: 90%;
   min-height: 1020px;
   margin: 0 auto;
-  background-color: #fbded8;
+  margin-bottom: 50px;
+  background-color: #ffffcc;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 `;
 
 const Title = styled.div`
-  font-family: Arial, Helvetica, sans-serif;
   text-align: center;
   margin-top: 60px;
 `;
 
 const Intro = styled.div`
-  margin: 0 auto;
-  height: 115px;
+  margin-left: auto;
+  margin-right: auto;
+  height: auto;
   width: 720px;
   & > p {
     line-height: 1.8em;
@@ -39,6 +41,7 @@ const Image = styled.div`
   justify-self: self-end;
   & > img {
     height: 652px;
+    max-width: 100%;
   }
 `;
 
@@ -56,7 +59,7 @@ class About extends Component {
   render() {
     return (
       <Wrapper>
-        <Container>
+        <Container className="box">
           <Title>
             <h1>ABOUT</h1>
             <h4>OLENA DMYTRENKO, DECORATOR</h4>

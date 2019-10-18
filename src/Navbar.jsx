@@ -1,10 +1,11 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import styled from 'styled-components';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import styled from "styled-components";
 
 const Wrapper = styled.div`
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 `;
 const LogoLink = styled(Link)`
   text-decoration: none;
@@ -39,11 +40,12 @@ class Navbar extends Component {
         </LogoLink>
         <NavLinks>
           <NavLink to="/">HOME</NavLink>
-          <NavLink to="/portfolio">PORTFOLIO</NavLink>
           <NavLink to="/about">ABOUT</NavLink>
+          <NavLink to="/portfolio">PORTFOLIO</NavLink>
           <NavLink to="/shop">SHOP</NavLink>
           <NavLink to="/blog">BLOG</NavLink>
           <NavLink to="/contact">CONTACT</NavLink>
+          {/* <NavLink to="/lang">EN</NavLink> */}
         </NavLinks>
       </Wrapper>
     );
