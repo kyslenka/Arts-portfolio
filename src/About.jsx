@@ -37,7 +37,7 @@ class About extends Component {
   render() {
     return (
       <Wrapper>
-        <Container className="box">
+        <Container>
           <Title>
             <h1>ABOUT</h1>
             <h2>OLENA DMYTRENKO, DECORATOR</h2>

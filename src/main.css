@@ -8,6 +8,10 @@ body {
   font-family: Palatino, Georgia, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .overlay {
   z-index: 50;
   position: fixed;
@@ -25,4 +29,22 @@ body {
   left: 200px;
   right: 200px;
   background-color: white;
+}
+
+.grid-item-2 {
+  grid-row: span 2;
+}
+
+.grid-item-4 {
+  grid-row: 3 /5;
+}
+
+.grid-item-8 {
+  grid-column: 3 / 4;
+  grid-row: 4 / 6;
+}
+
+.grid-item-9 {
+  grid-column: 1 / 3;
+  grid-row: 5 / 7;
 }
