@@ -1,54 +1,32 @@
-import React, { Component } from "react";
-import styled from "styled-components";
+import React, { Component } from 'react';
+import styled from 'styled-components';
+import {
+  Wrapper,
+  Container,
+  Title,
+  Intro,
+  MainSection,
+} from './Styled-Components/Divs.jsx';
 
-const Wrapper = styled.div`
-  min-height: 100vh;
-`;
-
-const Container = styled.div`
-  display: grid;
-  width: 90%;
-  min-height: 1020px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  background-color: #ffffcc;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-`;
-
-const Title = styled.div`
-  text-align: center;
-  margin-top: 60px;
-`;
-
-const Intro = styled.div`
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
-  width: 720px;
-  & > p {
-    line-height: 1.8em;
-    text-align: center;
-  }
-`;
-
-const MainSection = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
-`;
+// const Image = styled.div`
+//   justify-self: self-end;
+//   & > img {
+//     height: 652px;
+//     width: auto;
+//   }
+// `;
 
 const Image = styled.div`
-  justify-self: self-end;
-  & > img {
-    height: 652px;
+  object-fit: contain;
+  > img {
     max-width: 100%;
+    height: 652px;
   }
 `;
 
 const Biography = styled.div`
-  box-sizing: border-box;
   justify-self: self-start;
-  width: 437px;
+  max-width: auto;
   height: 652px;
   padding: 30px;
   line-height: 1.8em;
@@ -62,7 +40,7 @@ class About extends Component {
         <Container>
           <Title>
             <h1>ABOUT</h1>
-            <h4>OLENA DMYTRENKO, DECORATOR</h4>
+            <h2>OLENA DMYTRENKO, DECORATOR</h2>
           </Title>
           <Intro>
             <p>
