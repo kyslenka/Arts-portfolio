@@ -1,12 +1,5 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import {
-  Wrapper,
-  Container,
-  Title,
-  Intro,
-  MainSection
-} from "./Styled-Components/Divs.jsx";
 
 const Wrapper = styled.div`
   min-height: 100vh;
@@ -41,25 +34,26 @@ const Intro = styled.div`
 const MainSection = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 40px;
+  grid-gap: 60px;
   height: 90vh;
 `;
 
 const Image = styled.div`
-  object-fit: contain;
-  > img {
-    max-width: 100%;
-    height: 652px;
+  justify-self: self-end;
+  & > img {
+    height: 83vh;
+    width: 29vw;
   }
 `;
 
 const Biography = styled.div`
   justify-self: self-start;
   max-width: auto;
-  height: 652px;
   padding: 30px;
   line-height: 1.8em;
   background-color: #fff;
+  height: 83vh;
+  width: 29vw;
 `;
 
 class About extends Component {
