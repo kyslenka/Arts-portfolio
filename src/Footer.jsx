@@ -9,9 +9,11 @@ const Wrapper = styled.div`
   margin: 0 5vw;
   height: 10vh;
 `;
+
 const LogoLink = styled(Link)`
   text-decoration: none;
 `;
+
 const Logo = styled.div`
   color: black;
   margin: 0;
@@ -25,38 +27,19 @@ const Logo = styled.div`
     color: #fff;
   }
 `;
-const NavLinks = styled.div`
-  display: flex;
-  justify-content: flex-end;
-`;
-const NavLink = styled(Link)`
-  margin: 0;
-  color: black;
-  text-decoration: none;
-  padding: 10px;
-  &:hover {
-    color: #fff;
-  }
-`;
 
-class Navbar extends Component {
+class Footer extends Component {
   render() {
     return (
       <Wrapper>
         <LogoLink to="/">
           <Logo>Mrs. Olena</Logo>
         </LogoLink>
-        <NavLinks>
-          <NavLink to="/">HOME</NavLink>
-          <NavLink to="/about">ABOUT</NavLink>
-          <NavLink to="/portfolio">PORTFOLIO</NavLink>
-          <NavLink to="/shop">SHOP</NavLink>
-          <NavLink to="/blog">BLOG</NavLink>
-          <NavLink to="/contact">CONTACT</NavLink>
-        </NavLinks>
+        <p>(514)546-87-94 | olena.zevelzeva@gmail.com</p>
+        <p>&copy; 2020 by Olena Zevelzeva</p>
       </Wrapper>
     );
   }
 }
 
-export default Navbar;
+export default Footer;
